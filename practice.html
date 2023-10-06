@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my first web design
+</title>
+<style>
+  .image {
+    width: 300px;
+    border-radius: 8px;
+  }
+.welcome {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 5px;
+  }
+.web {
+    margin-top: 3px;
+    line-height: 2px;
+  }
+  .Founder {
+    color: rgb(96, 96, 96);
+  }
+  .image-preview {
+    width: 300px;
+    display: inline-block;
+  }
+  .name, 
+  .site {
+    color:rgb(96, 96, 96);
+  }
+  .album {
+    width: 300px;
+    border-radius: 8px; 
+    height: 400px;
+  }
+  .album-preview {
+    width: 300px;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width: 750px) {
+  body {
+    margin: auto;
+  }
+    }
+  .follow,
+  .add {
+    background-color: rgb(13, 77, 255);
+    border: none;
+    width: 100px;
+    border-radius: 3px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .follow:hover,
+  .add:hover {
+    background-color: gray;
+  }
+  .follow:active,
+  .add:active {
+    background-color: blue;  
+  }
+  .header {
+    height: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(221, 213, 213);
+  padding-left: 7px;
+  }
+
+  .sidebar-link {
+    background-color: gray;
+    height: 90px;
+    margin-bottom: 1px;
+  }
+  .sidebar-link:hover {
+    background-color: rgb(216, 210, 210);
+    cursor: pointer;
+  }
+  .sidebar {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    width: 100px;
+    z-index: ;
+  }
+  .hamburger {
+    height: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .youtube-icon {
+    height: 120px;
+    width: 120px;
+  }
+  .left-section {
+    width: 350px;
+    align-items: center;
+    display: flex;
+  }
+  .middle-section {
+    flex: 1;
+    margin-left: 75px;
+    margin-right: 75px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+  }
+  .icon-search {
+    height: 41px;
+    width: 41px;
+    margin-right: 12px;
+    border-radius: 5px;
+    border-color: rgb(230, 221, 221);
+    margin-left: -4px;
+  }
+  .icon-voice {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+  }
+  .right-section {
+    width: 350px;
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+   flex-shrink: 0;
+  }
+   body {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 120px;
+   }
+   .search-ic {
+     height: 23px;
+     width: 23px;
+     padding-top: 5px;
+   }
+   .ic-voice {
+     height: 26px;
+     width: 26px;
+     padding-top: 3px;
+     padding-right: 8px;
+   }
+   .text-box {
+     height: 33px;
+     flex: 1;
+     border-radius: 5px;
+     border-color: rgb(216, 210, 210);
+     font-size: 16px;
+     box-shadow: inset 1px, 2px, 3px rgb(0, 0, 0, 0.05);
+     width: 0;
+   }
+   .text-box::placeholder {
+     font-family: roboto, arial;
+     font-size: 16px;
+   }
+   .video-ico {
+     height: 40px;
+     width: 40px;
+   }
+   .row-icon {
+     height: 38px;
+     width: 38px;
+   }
+   .notification-bell {
+     height: 40px;
+     width: 40px;
+   }
+   .sheyi-pix {
+     height: 40px;
+     width: 40px;
+     border-radius: 20px;
+     margin-right: 10px;
+   }
+   .sidebar-link {
+     background-color: white;
+     height: 100px;
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+   }
+   .sidebar-link img {
+  height: 30px;
+  margin-bottom: 5px;
+   }
+   .sidebar-link div {
+     font-family: roboto, arial;
+     font-size: 12px;
+   }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="left-section">
+      <img class="hamburger" src="hamburger-menu.ico">
+      <img class="youtube-icon" src="youtube-icon.png">
+    </div>
+    <div class="middle-section">
+    <input class="text-box" type="text"placeholder="search">
+    <button class="icon-search">
+      <img class="search-ic"
+      src="search-icon.png">
+    </button>
+    <button class="icon-voice">
+      <img class="ic-voice" 
+      src="voice-icon.png">
+    </button>
+    </div>
+    <div class="right-section">
+      <img class="video-ico" src="video-icon.png">
+      <img class="row-icon" src="row-icon.png">
+      <img class="notification-bell" src="notification-bell.ico">
+      <img class="sheyi-pix" src="sheyi-sut.jpg">
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="sidebar-link">
+      <img src="home.png">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="explore.png">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="subscription.png">
+      <div>subscription</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="youtube-play.png">
+      <div>Youtube play</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="play.png">
+      <div>Play</div>
+    </div>
+    
+  
+  </div>
+    
+    <div class="image-preview">
+    <img class="image" 
+    src="sagereal.jpg">
+    <p class="welcome">
+      Welcome to <strong>Sagereal</strong> technological company
+    </p> 
+    <p class="web">
+      Web development and Software engineering
+      </p>
+      <p class="Founder">Founder Adetola Akinwale Joshua</p>
+      <button class="follow">
+        Follow</button>
+<p><u>see more</u></p>
+      </div>
+<div class="album-preview">
+    <img class="album" 
+    src="sheyi.jpg">
+    <p class="greeting">
+      Welcome to my first <strong>Website</strong>
+    </p> 
+    <p class="name">
+      Adetola Oluwasheyi David</p>
+    <p class="site">
+      Web development and Software engineering
+      </p>
+      <button class="add">
+        Follow</button>
+    </div>
+    <div class="image-preview">
+      <img class="image" 
+      src="sagereal.jpg">
+      <p class="welcome">
+        Welcome to <strong>Sagereal</strong> technological company
+      </p> 
+      <p class="web">
+        Web development and Software engineering
+        </p>
+        <p class="Founder">Founder Adetola Akinwale Joshua</p>
+        <button class="follow">
+          Follow</button>
+  <p><u>see more</u></p>
+  </div>
+  <div class="album-preview">
+      <img class="album" 
+      src="laptop.jpg">
+      <p class="greeting">
+        Purchase your laptop at affordable prices
+      </p> 
+      <p class="name">
+        Adetola Oluwasheyi David</p>
+      <p class="site">
+        follow and contact us 
+        </p>
+        <button class="add">
+          Follow</button>
+      </div>
+      <div class="image-preview">
+        <img class="image" 
+        src="sagereal.jpg">
+        <p class="welcome">
+          Welcome to <strong>Sagereal</strong> technological company
+        </p> 
+        <p class="web">
+          Web development and Software engineering
+          </p>
+          <p class="Founder">Founder Adetola Akinwale Joshua</p>
+          <button class="follow">
+            Follow</button>
+    <p><u>see more</u></p>
+          </div>
+    <div class="album-preview">
+        <img class="album" 
+        src="sheyi.jpg">
+        <p class="greeting">
+          Welcome to my first <strong>Website</strong>
+        </p> 
+        <p class="name">
+          Adetola Oluwasheyi David</p>
+        <p class="site">
+          Web development and Software engineering
+          </p>
+          <button class="add">
+            Follow</button>
+        </div>
+        <div class="image-preview">
+          <img class="image" 
+          src="sagereal.jpg">
+          <p class="welcome">
+            Welcome to <strong>Sagereal</strong> technological company
+          </p> 
+          <p class="web">
+            Web development and Software engineering
+            </p>
+            <p class="Founder">Founder Adetola Akinwale Joshua</p>
+            <button class="follow">
+              Follow</button>
+      <p><u>see more</u></p>
+      </div>
+      <div class="album-preview">
+          <img class="album" 
+          src="laptop.jpg">
+          <p class="greeting">
+            Purchase your laptop at affordable prices
+          </p> 
+          <p class="name">
+            Adetola Oluwasheyi David</p>
+          <p class="site">
+            follow and contact us 
+            </p>
+            <button class="add">
+              Follow</button>
+          </div>
+</body>
+</html>
